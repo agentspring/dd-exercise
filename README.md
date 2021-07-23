@@ -1,1 +1,1 @@
-# dd-exercise
+# Exploring Datadog
