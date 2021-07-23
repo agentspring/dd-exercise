@@ -4,4 +4,4 @@
 - Processes
 - Logs
 - Enterprise System Status (Graze API metrics)
-- This GitHub repo for updates to deployment files
+- Changes to files in this GitHub repo
