@@ -125,7 +125,7 @@ instances:
         - service:ui
     # sitn_delay indicates how long it took from create a situation
     # Delays > 60 secs can indicate a moolet backlog past AlertBuilder
-      - query: SELECT MAX(created_at-first_event_time) FROM moogdb.sigs
+      - query: SELECT created_at-first_event_time FROM moogdb.sigs order by sig_id desc limit 1
         columns:
         - name: mysql.moog.farmd.sitn_delay
           type: gauge
