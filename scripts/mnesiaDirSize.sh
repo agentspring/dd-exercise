@@ -3,7 +3,7 @@
 # Track size of the rabbitmq dir in Megabytes
 #
 RABBIT_DIR=$MOOGSOFT_HOME/var/lib/rabbitmq
-DD_API_KEY=90e5925495e61452b1f4b958ec1ba7e0
+DD_API_KEY=
 
 UTCTIME=$(date +%s) #Current time (UTC/GMT)
 
@@ -34,7 +34,7 @@ EOF
 
 # Verify path to rabbit nmesia is available
 if [ ! -d $RABBIT_DIR ]; then
-   notify "Could not find/read rabbitmq dir here: $RABBIT_DIR."
+   sendToDatadog 0
    exit 1
 fi
 
