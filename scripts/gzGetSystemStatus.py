@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# Last Update: 2021-07-23 Dave Gerhard
 #
 # Report status of Moogsoft Enterprise moolets
 #
@@ -25,10 +24,7 @@
 # If system.conf is not going to be configured properly then the other
 # option would be to maintain the 'expected' process list here and check
 # the output against that.
-#
-# * getSystemStatus provide similar results to ha_cntl -v with additional
-#   metrics as seen in UI Self Monitoring
-# 
+
 import json
 import sys
 import urllib2, ssl
